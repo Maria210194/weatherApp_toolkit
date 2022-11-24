@@ -1,0 +1,33 @@
+.ant-menu-light .ant-menu-submenu-title {
+  color: white;
+}
+
+.ant-btn > span {
+  display: inline-block;
+  font-size: 11px;
+}
+
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item:hover::after {
+  border-bottom: 2px solid #c9ada7 !important;
+}
+
+.cities {
+  padding-top: 2%;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+
+  .singleCity {
+    color: white;
+    border: none;
+    text-transform: uppercase;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .ant-btn > span {
+    font-size: 15px;
+  }
+}

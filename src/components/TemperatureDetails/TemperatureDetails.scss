@@ -1,0 +1,93 @@
+.detailsBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+  font-size: 21px;
+  color: #9a8c98;
+}
+
+.bigDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding-bottom: 1rem;
+
+  .gradesToday {
+    color: white;
+    font-size: 37px;
+    margin-bottom: 1rem;
+  }
+
+  .todayBox {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+  }
+  .todayInfo {
+    display: flex;
+    font-weight: lighter;
+    align-items: center;
+    justify-content: center;
+
+    .realFeel {
+      margin-left: 0.25rem;
+      font-weight: 500;
+    }
+  }
+}
+
+.sunRise {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 1rem;
+
+  svg {
+    font-size: 19px;
+  }
+
+  p {
+    padding-right: 1%;
+    margin: 0;
+    font-size: 14px;
+  }
+
+  .separator {
+    display: none;
+    color: white;
+    padding: 0 0.5rem;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .bigDetails {
+    flex-direction: row;
+  }
+
+  .sunRise {
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 1rem;
+
+    svg {
+      width: 2rem;
+      height: 2rem;
+      margin-right: 0.5rem;
+    }
+
+    p {
+      padding: 0.5rem 0;
+      font-size: 17px;
+    }
+
+    .separator {
+      display: inline-block;
+    }
+  }
+}
